@@ -5,6 +5,7 @@ from src.logger import logging
 from dataclasses import dataclass
 from src.exception import CustmeException
 from sklearn.model_selection import train_test_split
+from src.components.data_transfromer import DataTransfromation
 
 @dataclass
 class DataIngestionConfig:
@@ -43,10 +44,14 @@ class DataIngestion:
                 # self.ingestion_config.raw_data_path
             )
         except Exception as e:
+            logging.info("error occured in data ingestion stage")
             raise CustmeException(e, sys)
 
 if __name__ == "__main__":
-    data_ingestion = DataIngestion()
-    data_ingestion.inititate_data_ingestion()
+    obj = DataIngestion()
+    train_data_path,test_data_path = obj.inititate_data_ingestion()
+
+    data_transfromaton = DataTransfromation()
+    train_arr, test_arr, _ = data_transfromaton.initiate_data_transformation(train_data_path, test_data_path)
 
 

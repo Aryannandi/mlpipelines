@@ -28,8 +28,8 @@ def evaluate_model(X_train, y_train, X_test, y_test, models, params):
     try:
         report = {}
         for i in range(len(list(models))):
-            model = list(models.value())[i]
-            para = params[list(models.keysa())[i]]
+            model = list(models.values())[i]
+            para = params[list(models.keys())[i]]
 
             GS = GridSearchCV(model, para, cv=5)
             GS.fit(X_train, y_train)
@@ -42,7 +42,7 @@ def evaluate_model(X_train, y_train, X_test, y_test, models, params):
             test_model_accuracy = accuracy_score(y_test, y_pred)
 
 
-            report[list(models.value())[i]] = test_model_accuracy
+            report[list(models.values())[i]] = test_model_accuracy
 
             return report
         

@@ -13,7 +13,7 @@ def error_message_detailed(error,error_detailed:sys):
     return error_message
 
 class CustmeException(Exception):
-    def __init__(self, error_message, error_detailed:sys):
+    def __init__(self, error_message, error_detailed: sys):
         super().__init__(error_message)
         self.error_message = error_message_detailed(error_message, error_detailed=error_detailed)
 

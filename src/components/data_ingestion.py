@@ -6,12 +6,14 @@ from dataclasses import dataclass
 from src.exception import CustmeException
 from sklearn.model_selection import train_test_split
 from src.components.data_transfromer import DataTransfromation
+from src.components.modrl_trainer import ModelTrainer
+
 
 @dataclass
 class DataIngestionConfig:
-    train_data_path = os.path.join("artifacts", "train.csv")
-    test_data_path = os.path.join("artifacts", "test.csv")
-    raw_data_path = os.path.join("artifacts", "raw.csv")
+    train_data_path = os.path.join("artifacts/data_ingestion", "train.csv")
+    test_data_path = os.path.join("artifacts/data_ingestion", "test.csv")
+    raw_data_path = os.path.join("artifacts/data_ingestion", "raw.csv")
 
 
 class DataIngestion:
@@ -23,7 +25,7 @@ class DataIngestion:
     # mlpipelines\notbook\data\Canada_per_capita_income (1).csv
     def inititate_data_ingestion(self):
         try:
-            data = pd.read_csv(os.path.join("notbook/data", "Canada_per_capita_income (1).csv"))
+            data = pd.read_csv(os.path.join("notbook/data", "income_cleandata.csv"))
             logging.info("Data Ingestion Started")
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
@@ -52,6 +54,8 @@ if __name__ == "__main__":
     train_data_path,test_data_path = obj.inititate_data_ingestion()
 
     data_transfromaton = DataTransfromation()
-    train_arr, test_arr, _ = data_transfromaton.initiate_data_transformation(train_data_path, test_data_path)
+    train_arr, test_arr, _ = data_transfromaton.inititate_data_transformation(train_data_path, test_data_path)
 
+    modeltrainer = ModelTrainer()
+    print(modeltrainer.inititate_model_trainer(train_arr, test_arr))
 

@@ -4,7 +4,7 @@ import numpy as np
 from src.logger import logging
 from src.exception import CustmeException
 from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import SimpleImputer
+from sklearn.impute import SimpleImputer
 from dataclasses import dataclass
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
@@ -16,7 +16,7 @@ class DataTransfromationConfig:
 
 
 
-class DataTransfromertion:
+class DataTransfromation:
     def __init__(self):
         self.data_transformation_config = DataTransfromationConfig()
 
@@ -42,7 +42,7 @@ class DataTransfromertion:
         except Exception as e:
             raise CustmeException(e, sys)
             
-    def remote_outliners_IQr(self,col,df):
+    def remote_outliers_IQR(self,col,df):
         try:
             Q1 = df[col].quantile(0.25)
             Q3 = df[col].quantile(0.75)
@@ -57,7 +57,7 @@ class DataTransfromertion:
             raise CustmeException(e, sys)
         
 
-    def inverse_transform(self,train_path, test_path):
+    def inititate_data_transformation(self, train_path, test_path):
         try:
             train_data = pd.read_csv(train_path)
             test_data = pd.read_csv(test_path)
@@ -67,13 +67,13 @@ class DataTransfromertion:
             'capital_loss', 'hours_per_week', 'native_country']
            
             for col in numerical_features:
-               self.remote_outliners_IQR(col = col,df = train_data)
+               self.remote_outliers_IQR(col = col, df = train_data)
 
             logging.info("Outliners capped on our train data")
 
 
             for col in numerical_features:
-               self.remote_outliners_IQR(col = col,df = test_data)
+               self.remote_outliers_IQR(col = col,df = test_data)
 
             logging.info("Outliners capped on our test data")
 
@@ -99,15 +99,16 @@ class DataTransfromertion:
             test_array = np.c_[input_test_arr, np.array(traget_feature_test_data)]
 
 
-            save_object(file_path = self.data_transfromation_config.preprocess_obj_file_path,
-                         obj = preprocess_obj)
+            save_object(file_path = self.data_transformation_config.preprocess_obj_file_path,
+                        obj = preprocess_obj)
             
 
             return (train_array,
                     test_array,
-                    self.data_transfromation_config.preprocess_obj_file_path)
-
+                    self.data_transformation_config.preprocess_obj_file_path)
+                    
 
         except Exception as e:
             raise CustmeException(e, sys)
+        
         

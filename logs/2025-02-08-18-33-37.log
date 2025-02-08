@@ -1,0 +1,11 @@
+ll2025-02-08 18:33:38,968 - root - INFO - Data Ingestion Started
+2025-02-08 18:33:39,043 - root - INFO - Raw Data Saved
+2025-02-08 18:33:39,048 - root - INFO - Data Split Completed
+2025-02-08 18:33:39,123 - root - INFO - Data Ingestion Completed
+2025-02-08 18:33:39,209 - root - INFO - Outliners capped on our train data
+2025-02-08 18:33:39,224 - root - INFO - Outliners capped on our test data
+2025-02-08 18:33:39,224 - root - INFO - transfromation started
+2025-02-08 18:33:39,224 - root - INFO - Splitting data into dependent and independent featuress
+2025-02-08 18:33:39,227 - root - INFO - Spilting data into dependent and independent features
+2025-02-08 18:33:39,272 - root - INFO - splitting our data into dependent and indepent features
+2025-02-08 18:34:18,237 - root - INFO - best model found, Model Name is random forest, accuracy Score: 0.8063921327596804

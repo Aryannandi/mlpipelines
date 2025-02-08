@@ -1,0 +1,10 @@
+2025-02-05 18:05:16,988 - root - INFO - Data Ingestion Started
+2025-02-05 18:05:17,087 - root - INFO - Raw Data Saved
+2025-02-05 18:05:17,094 - root - INFO - Data Split Completed
+2025-02-05 18:05:17,194 - root - INFO - Data Ingestion Completed
+2025-02-05 18:05:17,279 - root - INFO - Outliners capped on our train data
+2025-02-05 18:05:17,292 - root - INFO - Outliners capped on our test data
+2025-02-05 18:05:17,292 - root - INFO - transfromation started
+2025-02-05 18:05:17,292 - root - INFO - Splitting data into dependent and independent featuress
+2025-02-05 18:05:17,296 - root - INFO - Spilting data into dependent and independent features
+2025-02-05 18:05:17,341 - root - INFO - splitting our data into dependent and indepent features

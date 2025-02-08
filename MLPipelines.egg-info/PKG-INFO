@@ -1,6 +1,9 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: MLPipelines
 Version: 0.0.1
 Summary: ML Pipelines projects
 Author: Aryan nandi
 Author-email: aryannandi63@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

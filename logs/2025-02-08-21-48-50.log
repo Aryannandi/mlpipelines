@@ -1,0 +1,18 @@
+2025-02-08 21:48:51,749 - werkzeug - WARNING -  * Debugger is active!
+2025-02-08 21:48:51,764 - werkzeug - INFO -  * Debugger PIN: 598-900-606
+2025-02-08 21:48:56,430 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:48:56] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-02-08 21:48:56,640 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:48:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-08 21:48:56,765 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:48:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-08 21:48:56,781 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:48:56] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=UTNxUYtwDpLxwIB6fjWw HTTP/1.1" 200 -
+2025-02-08 21:48:57,110 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:48:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-08 21:49:00,265 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:00] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-02-08 21:49:00,608 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:00] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-08 21:49:00,610 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:00] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-08 21:49:00,872 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=UTNxUYtwDpLxwIB6fjWw HTTP/1.1[0m" 304 -
+2025-02-08 21:49:00,937 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-08 21:49:01,555 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:01] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-02-08 21:49:01,904 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-08 21:49:01,905 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-08 21:49:02,165 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=UTNxUYtwDpLxwIB6fjWw HTTP/1.1[0m" 304 -
+2025-02-08 21:49:02,232 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:49:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-08 21:49:08,483 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Aryan\\Desktop\\mlpipelines\\src\\pipeline\\predictive_pipeline.py', reloading

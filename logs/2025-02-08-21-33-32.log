@@ -1,0 +1,8 @@
+2025-02-08 21:33:34,473 - werkzeug - WARNING -  * Debugger is active!
+2025-02-08 21:33:34,481 - werkzeug - INFO -  * Debugger PIN: 694-164-359
+2025-02-08 21:33:35,428 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:33:35] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-02-08 21:33:35,515 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:33:35] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-08 21:33:35,748 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:33:35] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-08 21:33:35,760 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:33:35] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=kiMGNSpWFo10ck8cUfga HTTP/1.1" 200 -
+2025-02-08 21:33:36,079 - werkzeug - INFO - 127.0.0.1 - - [08/Feb/2025 21:33:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-08 21:33:50,315 - werkzeug - INFO -  * Detected change in 'c:\\users\\aryan\\desktop\\mlpipe\\mlpipelines\\src\\pipeline\\predictive_pipeline.py', reloading
